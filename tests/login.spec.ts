@@ -8,7 +8,7 @@ interface LoginData {
   password: string;
   valid: boolean;
 }
-
+console.log("Test the yaml code push");
 test.describe('Login Scenarios', () => {
   for (const data of loginData as LoginData[]) {
     test(`Login test for user: ${data.username} (valid: ${data.valid})`, async ({ page }) => {
